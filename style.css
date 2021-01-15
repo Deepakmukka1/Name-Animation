@@ -55,3 +55,12 @@ svg path:nth-child(6) {
     fill: white;
   }
 }
+@media only screen and (max-width: 600px) {
+  svg {
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    transform: translate(-40%, -40%);
+    transform: scale(0.6);
+  }
+}
