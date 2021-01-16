@@ -79,7 +79,7 @@ body {
   #wave {
     position: absolute;
     left: 5%;
-    top: 74%;
+    top: 67%;
     transform: translate(-40%, -40%);
     transform: scale(0.7);
   }
