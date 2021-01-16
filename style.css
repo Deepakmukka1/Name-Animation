@@ -5,43 +5,56 @@
 body {
   background-color: #032041;
 }
-svg {
+#name {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 40%;
   transform: translate(-50%, -50%);
   animation: fills 0.5s ease infinite 3s;
 }
-svg path:nth-child(1) {
+#name path:nth-child(1) {
   stroke-dasharray: 571;
   stroke-dashoffset: 571;
   animation: anim 3s ease forwards;
 }
-svg path:nth-child(2) {
+#name path:nth-child(2) {
   stroke-dasharray: 463.9679260253906;
   stroke-dashoffset: 463.9679260253906;
   animation: anim 3s ease forwards;
 }
-svg path:nth-child(3) {
+#name path:nth-child(3) {
   stroke-dasharray: 463.9679260253906;
   stroke-dashoffset: 463.9679260253906;
   animation: anim 3s ease forwards;
 }
-svg path:nth-child(4) {
+#name path:nth-child(4) {
   stroke-dasharray: 449;
   stroke-dashoffset: 449;
   animation: anim 3s ease forwards;
 }
-svg path:nth-child(5) {
+#name path:nth-child(5) {
   stroke-dasharray: 490.29205322265625;
   stroke-dashoffset: 490.29205322265625;
   animation: anim 3s ease forwards;
 }
-svg path:nth-child(6) {
+#name path:nth-child(6) {
   stroke-dasharray: 512.3521728515625;
   stroke-dashoffset: 512.3521728515625;
   animation: anim 3s ease forwards;
 }
+#wave {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  animation: fills 0.5s ease forwards 3s;
+}
+#wave path {
+  stroke-dasharray: 1042.789306640625;
+  stroke-dashoffset: 1042.789306640625;
+  animation: anim 3s ease infinite;
+}
+
 @keyframes anim {
   to {
     stroke-dashoffset: 0;
@@ -56,11 +69,18 @@ svg path:nth-child(6) {
   }
 }
 @media only screen and (max-width: 600px) {
-  svg {
+  #name {
     position: absolute;
     left: -10%;
-    top: 50%;
+    top: 40%;
     transform: translate(-40%, -40%);
     transform: scale(0.6);
+  }
+  #wave {
+    position: absolute;
+    left: 5%;
+    top: 55%;
+    transform: translate(-40%, -40%);
+    transform: scale(0.7);
   }
 }
